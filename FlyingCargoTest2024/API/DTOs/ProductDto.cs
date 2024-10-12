@@ -1,18 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Model.Entities
+﻿namespace API.DTOs
 {
-    [Table("Products")]
-    public class Products
+    public class ProductDto
     {
-        [Key]
         public int ProductId { get; set; }
         public string ProductName { get; set; } = String.Empty;
         public decimal Price { get; set; }
         public string Description { get; set; } = String.Empty;
         public int StockQuantity { get; set; }
         public DateTime CreatedAt { get; set; }
-
     }
 }
